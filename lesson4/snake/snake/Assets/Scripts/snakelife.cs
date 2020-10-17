@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using System.Security.Cryptography;
 using UnityEngine;
 
-public class snakelife : MonoBehaviour
+public class Snakelife : MonoBehaviour
 {
     public GameObject SnakeBody;  
     int timeBuff = 0;
@@ -36,7 +36,7 @@ public class snakelife : MonoBehaviour
     {
         if(direction.x!=0 || direction.y!=0)
         {
-            Rigidbody componentRigid = GetComponent<Rigibody>();
+            Rigidbody componentRigid = GetComponent<Rigidbody>();
             componentRigid.velocity = new Vector3(direction.x * speed, direction.y * speed, 0);
 
             if(SnakeTail.Count > 0)
@@ -45,7 +45,7 @@ public class snakelife : MonoBehaviour
 
                 for(int i = SnakeTail.Count-1;i>0; i--)
                 {
-                    SnakeTail[i].transform.position = SnakeTail[i - 1].transorm.position;
+                    SnakeTail[i].transform.position = SnakeTail[i-1].transform.position;
                 }
             }
         }

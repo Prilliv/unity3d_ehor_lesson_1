@@ -125,3 +125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee24b405d31a0104cbd0ca9375b43f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SnakeBody: {fileID: 3590464992863741166, guid: 35fdd919fcdc9534fa1b1e23e8b10888, type: 3}
+  snakeScore: 0
+  direction: {x: 0, y: 0}
